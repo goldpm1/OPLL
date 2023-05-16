@@ -1,0 +1,78 @@
+library(tidyr)
+library(dplyr)
+library(tidyverse)
+library(tibble)
+''' 왜 설치가 안돼있지?
+package_version(R.version)
+library(biomaRt)
+library (DESeq2)
+library(motifbreakR)
+library(debrowser)
+library(clusterProfiler)
+startDEBrowser()
+''' 
+
+library (DESeq2)
+
+inputprocess1 = function (InputPath, headerTF) {
+  #InputPath = "/home/goldpm1/OPLL/0.rnaraw/9.public_belgium/*.tsv"; headerTF = "TRUE"
+  dataNames = Sys.glob(InputPath)
+  
+  countdata_temp = data.frame("gene" = NA)
+  for (individual in dataNames){
+    countdata_single = read.table(individual, header = as.logical(headerTF), fill = TRUE)
+    #colnames(countdata_single) = rev(unlist(str_split(unlist(str_split(individual, pattern = "_"))[3], pattern = "-")))[1]
+    countdata_temp =  full_join(countdata_single, countdata_temp, by="gene")
+  }
+  return (countdata_temp)
+}
+inputprocess2 = function (FactorName, countdata_temp){
+  cnd_temp = factor(rep(FactorName,length(countdata_temp)))
+  metadata_temp = data.frame("sample" = colnames(countdata_temp), "group" = cnd_temp)
+  return (metadata_temp[2:nrow(metadata_temp),])
+}
+
+# Read raw count data (dataframe)
+  # Our data (pilot)
+  countdata_pilot = read.table("/home/goldpm1/OPLL/0.rnaraw/04.matrix/bone.tsv", header = TRUE, fill = TRUE)
+  countdata_pilot$gene= gsub(pattern = ".[0-9]*$", replacement ="", x = countdata_pilot$gene)
+  #rownames(countdata_pilot) = gsub(pattern = ".[0-9]*$", replacement ="", x = rownames(countdata_pilot))
+  #colnames(countdata_pilot) = c("bone")
+  cnd_pilot = factor(rep("Pilot",length(countdata_pilot)))
+  metadata_pilot = data.frame("sample" = colnames(countdata_pilot), "group" = cnd_pilot)
+  metadata_pilot = metadata_pilot [2:nrow(metadata_pilot),]
+
+  # Public data (belgium)
+  countdata_osteo = inputprocess1("/home/goldpm1/OPLL/0.rnaraw/9.public_belgium/*.tsv", "TRUE")
+  metadata_osteo = inputprocess2("Public_osteo", countdata_osteo)
+  
+  # Public data (NB)
+  countdata_nb = inputprocess1("/home/goldpm1/OPLL/0.rnaraw/9.public_nb/*.tsv", "TRUE")
+  metadata_nb = inputprocess2("Public_nb", countdata_nb)
+  
+  # Public data (jen96)
+  countdata_esophagus = inputprocess1("/home/goldpm1/OPLL/0.rnaraw/9.jen96/P20_deduplicated.tsv", "TRUE")
+  metadata_esophagus = inputprocess2("jen96_esophagus", countdata_esophagus)
+  
+
+
+
+  # Merge all data frames together using tidyverse
+  df_list = list(countdata_pilot, countdata_osteo, countdata_nb, countdata_esophagus)    
+  countdata = Reduce(function(x, y) merge(x, y, by = "gene", all=TRUE), df_list) 
+  countdata[is.na(countdata)] <- 0                 # replace NA values
+  rownames(countdata) = countdata$gene
+  countdata = countdata[-c(1:5),]
+    #countdata <- merge(countdata_pilot, countdata_osteo, by = 0, all = TRUE)  # merge by row names (by=0 or by="row.names")
+  metadata = rbind (metadata_pilot, metadata_osteo, metadata_nb, metadata_esophagus)
+  
+  
+  # Save countdata & metadata
+  write.table (countdata , file = "/home/goldpm1/OPLL/0.rnaraw/04.matrix/countdata.tsv", sep = "\t", row.names = FALSE, col.names = TRUE, quote = FALSE)
+  write.table (metadata , file = "/home/goldpm1/OPLL/0.rnaraw/04.matrix/metadata.tsv", sep = "\t", row.names = FALSE, col.names = TRUE, quote = FALSE)
+  
+  
+# DEG
+  
+  countdata[c(1150,1151,18,19,2122,513,709),]
+  

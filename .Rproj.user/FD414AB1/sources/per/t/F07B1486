@@ -1,0 +1,25 @@
+{
+    "id": "F07B1486",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1677747874941.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "id": "6dc7e947976c4e529e4c191b0f209f10",
+        "name": "geno(my_vcf)$AD",
+        "title": "geno(my_vcf)$AD"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2318270133864854132,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1677747874941,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,34 @@
+***Start_time: Tue Mar 14 14:33:31 KST 2023
+PLATFORM=Illumina
+PROJECTDIR=/home/goldpm1/OPLL
+REF=/home/goldpm1/OPLL/0.rnaraw/03.index
+BAMPath=/home/goldpm1/OPLL/0.rnaraw/02.bam/230207
+FASTQPath=/home/goldpm1/OPLL/0.rnaraw/00.fastq/230207
+FASTQ1=230207-OLF_1.fastq.gz
+FASTQ2=230207-OLF_2.fastq.gz
+SAMPLE=230207-OLF
+Mar 14 14:33:31 ..... started STAR run
+Mar 14 14:33:31 ..... loading genome
+Mar 14 14:34:24 ..... started 1st pass mapping
+Mar 14 14:55:44 ..... finished 1st pass mapping
+Mar 14 14:55:45 ..... inserting junctions into the genome indices
+Mar 14 14:57:14 ..... started mapping
+Mar 14 16:44:02 ..... finished mapping
+Mar 14 16:44:03 ..... started sorting BAM
+Mar 14 16:46:51 ..... finished successfully
+step1 done
+Tue Mar 14 16:47:07 KST 2023
+Tool returned:
+0
+AddRG done
+Tue Mar 14 17:04:34 KST 2023
+Tool returned:
+0
+MarkDuplicate done
+Tue Mar 14 17:37:51 KST 2023
+SplitNCigarReads done
+Tue Mar 14 23:00:09 KST 2023
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: Tue Mar 14 23:00:10 KST 2023
