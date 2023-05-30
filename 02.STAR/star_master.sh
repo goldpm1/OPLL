@@ -2,9 +2,11 @@
 #$ -S /bin/bash
 #$ -cwd
 
-scriptPath="/home/goldpm1/OPLL/script/02.STAR"
+/data/project/OPLL/script
+
+scriptPath="/data/project/OPLL/script/02.STAR"
 logPath=$scriptPath"/log"
-PROJECTDIR="/home/goldpm1/OPLL"
+PROJECTDIR="/data/project/OPLL"
 
 
 

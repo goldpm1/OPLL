@@ -2,9 +2,9 @@
 #$ -S /bin/bash
 #$ -cwd
 
-scriptPath="/home/goldpm1/OPLL/script/03.HTseq"
+scriptPath="/data/project/OPLL/script/03.HTseq"
 logPath=$scriptPath"/log"
-PROJECTDIR="/home/goldpm1/OPLL"
+PROJECTDIR="/data/project/OPLL"
 #GTFPath="/home/goldpm1/resources/gencode.v38.primary_assembly.annotation.gtf"     # Ensembl ID로 나옴
 GTFPath="/data/resource/annotation/human/UCSC/hg38/Genes/genes.gtf "       # Gene symbol로 나옴
 
