@@ -1,3 +1,6 @@
 *.Rproj
 *.Rdata
 *.Rhistory
+*/log
+*/*/log
+*/*/*/log
