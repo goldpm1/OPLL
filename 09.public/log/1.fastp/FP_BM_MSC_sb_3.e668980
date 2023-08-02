@@ -1,0 +1,52 @@
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 48309935
+total bases: 4879303435
+Q20 bases: 4808347824(98.5458%)
+Q30 bases: 4657753419(95.4594%)
+
+Read2 before filtering:
+total reads: 48309935
+total bases: 4879303435
+Q20 bases: 4725516423(96.8482%)
+Q30 bases: 4493543997(92.094%)
+
+Read1 after filtering:
+total reads: 47724840
+total bases: 4777711685
+Q20 bases: 4718535142(98.7614%)
+Q30 bases: 4580523870(95.8728%)
+
+Read2 aftering filtering:
+total reads: 47724840
+total bases: 4768114478
+Q20 bases: 4650981901(97.5434%)
+Q30 bases: 4438240329(93.0817%)
+
+Filtering result:
+reads passed filter: 95449680
+reads failed due to low quality: 1029662
+reads failed due to too many N: 24568
+reads failed due to too short: 46862
+reads failed due to low complexity: 69098
+reads with adapter trimmed: 5847023
+bases trimmed due to adapters: 71887553
+reads with polyX in 3' end: 625602
+bases trimmed in polyX tail: 12670287
+
+Duplication rate: 6.37534%
+
+Insert size peak (evaluated by paired-end reads): 138
+
+JSON report: fastp.json
+HTML report: /data/project/OPLL/0.rnaraw/99.public/GSE102312/02.fastp/BM_MSC_sb_3.html
+
+fastp -i /data/project/OPLL/0.rnaraw/99.public/GSE102312/01.fasta/BM_MSC_sb_3_1.fastq.gz -I /data/project/OPLL/0.rnaraw/99.public/GSE102312/01.fasta/BM_MSC_sb_3_2.fastq.gz -o /data/project/OPLL/0.rnaraw/99.public/GSE102312/02.fastp/BM_MSC_sb_3_1.fastq.gz -O /data/project/OPLL/0.rnaraw/99.public/GSE102312/02.fastp/BM_MSC_sb_3_2.fastq.gz -p -w 5 -5 -3 --trim_poly_g --trim_poly_x --length_required 15 -y --detect_adapter_for_pe -h /data/project/OPLL/0.rnaraw/99.public/GSE102312/02.fastp/BM_MSC_sb_3.html 
+fastp v0.21.0, time used: 330 seconds

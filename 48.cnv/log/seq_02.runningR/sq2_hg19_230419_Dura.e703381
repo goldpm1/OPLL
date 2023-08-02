@@ -1,0 +1,139 @@
+필요한 패키지를 로딩중입니다: BiocGenerics
+
+다음의 패키지를 부착합니다: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, sort,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Collecting GC information ........ done
+
+Processing chr1:
+   5 variant calls.
+   26 copy-number segments.
+   6641 heterozygous positions.
+   432501 homozygous positions.
+Processing chr2:
+   5 variant calls.
+   9 copy-number segments.
+   4483 heterozygous positions.
+   327300 homozygous positions.
+Processing chr3:
+   2 variant calls.
+   13 copy-number segments.
+   3264 heterozygous positions.
+   260307 homozygous positions.
+Processing chr4:
+   1 variant calls.
+   10 copy-number segments.
+   2722 heterozygous positions.
+   178456 homozygous positions.
+Processing chr5:
+   1 variant calls.
+   6 copy-number segments.
+   2899 heterozygous positions.
+   200602 homozygous positions.
+Processing chr6:
+   1 variant calls.
+   8 copy-number segments.
+   3000 heterozygous positions.
+   195418 homozygous positions.
+Processing chr7:
+   10 variant calls.
+   20 copy-number segments.
+   3831 heterozygous positions.
+   217552 homozygous positions.
+Processing chr8:
+   1 variant calls.
+   6 copy-number segments.
+   2219 heterozygous positions.
+   152144 homozygous positions.
+Processing chr9:
+   6 variant calls.
+   6 copy-number segments.
+   3035 heterozygous positions.
+   178179 homozygous positions.
+Processing chr10:
+   1 variant calls.
+   11 copy-number segments.
+   2888 heterozygous positions.
+   176517 homozygous positions.
+Processing chr11:
+   2 variant calls.
+   14 copy-number segments.
+   3884 heterozygous positions.
+   259493 homozygous positions.
+Processing chr12:
+   2 variant calls.
+   6 copy-number segments.
+   3194 heterozygous positions.
+   239050 homozygous positions.
+Processing chr13:
+   2 variant calls.
+   3 copy-number segments.
+   1341 heterozygous positions.
+   82212 homozygous positions.
+Processing chr14:
+   1 variant calls.
+   8 copy-number segments.
+   2375 heterozygous positions.
+   146150 homozygous positions.
+Processing chr15:
+   2 variant calls.
+   5 copy-number segments.
+   2146 heterozygous positions.
+   156102 homozygous positions.
+Processing chr16:
+   2 variant calls.
+   4 copy-number segments.
+   2958 heterozygous positions.
+   181076 homozygous positions.
+Processing chr17:
+   4 variant calls.
+   10 copy-number segments.
+   3597 heterozygous positions.
+   245993 homozygous positions.
+Processing chr18:
+   2 variant calls.
+   3 copy-number segments.
+   973 heterozygous positions.
+   68786 homozygous positions.
+Processing chr19:
+   2 variant calls.
+   13 copy-number segments.
+   4477 heterozygous positions.
+   274511 homozygous positions.
+Processing chr20:
+   1 variant calls.
+   4 copy-number segments.
+   1573 heterozygous positions.
+   108330 homozygous positions.
+Processing chr21:
+   2 variant calls.
+   5 copy-number segments.
+   1144 heterozygous positions.
+   47341 homozygous positions.
+Processing chr22:
+   2 variant calls.
+   4 copy-number segments.
+   1715 heterozygous positions.
+   97300 homozygous positions.
+Processing chrX:
+   2 variant calls.
+   4 copy-number segments.
+   1017 heterozygous positions.
+   162325 homozygous positions.
+Processing chrY:
+   2 variant calls.
+   5 copy-number segments.
+   144 heterozygous positions.
+   474 homozygous positions.

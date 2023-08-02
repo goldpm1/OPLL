@@ -1,0 +1,50 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 207314017
+total bases: 20938715717
+Q20 bases: 19221104890(91.797%)
+Q30 bases: 17326004094(82.7463%)
+
+Read2 before filtering:
+total reads: 207314017
+total bases: 20938715717
+Q20 bases: 18552443249(88.6035%)
+Q30 bases: 16585336971(79.209%)
+
+Read1 after filtering:
+total reads: 204882728
+total bases: 19524423699
+Q20 bases: 18905507739(96.83%)
+Q30 bases: 17062461440(87.3903%)
+
+Read2 aftering filtering:
+total reads: 204882728
+total bases: 19019476407
+Q20 bases: 18303792936(96.2371%)
+Q30 bases: 16380999314(86.1275%)
+
+Filtering result:
+reads passed filter: 409765456
+reads failed due to low quality: 117522
+reads failed due to too many N: 33408
+reads failed due to too short: 4400652
+reads failed due to low complexity: 310996
+reads with adapter trimmed: 675512
+bases trimmed due to adapters: 22941367
+reads with polyX in 3' end: 3192558
+bases trimmed in polyX tail: 50299704
+
+Duplication rate: 68.5379%
+
+Insert size peak (evaluated by paired-end reads): 101
+
+JSON report: fastp.json
+HTML report: /data/project/OPLL/0.rnaraw/99.public/GSE78608/02.fastp/ENCODE_Ob-1.html
+
+fastp -i /data/project/OPLL/0.rnaraw/99.public/GSE78608/01.fasta/ENCODE_Ob-1_1.fastq.gz -I /data/project/OPLL/0.rnaraw/99.public/GSE78608/01.fasta/ENCODE_Ob-1_2.fastq.gz -o /data/project/OPLL/0.rnaraw/99.public/GSE78608/02.fastp/ENCODE_Ob-1_1.fastq.gz -O /data/project/OPLL/0.rnaraw/99.public/GSE78608/02.fastp/ENCODE_Ob-1_2.fastq.gz -p -w 5 -5 -3 --trim_poly_g --trim_poly_x --length_required 15 -y --detect_adapter_for_pe -h /data/project/OPLL/0.rnaraw/99.public/GSE78608/02.fastp/ENCODE_Ob-1.html 
+fastp v0.21.0, time used: 1792 seconds

@@ -1,0 +1,52 @@
+Detecting adapter sequence for read1...
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+Detecting adapter sequence for read2...
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+Read1 before filtering:
+total reads: 33493388
+total bases: 1708162788
+Q20 bases: 1689403006(98.9018%)
+Q30 bases: 1650479994(96.6231%)
+
+Read2 before filtering:
+total reads: 33493388
+total bases: 1708162788
+Q20 bases: 1690619045(98.9729%)
+Q30 bases: 1655603056(96.923%)
+
+Read1 after filtering:
+total reads: 32203548
+total bases: 1637798199
+Q20 bases: 1620856160(98.9656%)
+Q30 bases: 1584049126(96.7182%)
+
+Read2 aftering filtering:
+total reads: 32203548
+total bases: 1628455535
+Q20 bases: 1614819183(99.1626%)
+Q30 bases: 1583076268(97.2134%)
+
+Filtering result:
+reads passed filter: 64407096
+reads failed due to low quality: 18378
+reads failed due to too many N: 100
+reads failed due to too short: 2321892
+reads failed due to low complexity: 239310
+reads with adapter trimmed: 1326530
+bases trimmed due to adapters: 35008924
+reads with polyX in 3' end: 1169010
+bases trimmed in polyX tail: 35824358
+
+Duplication rate: 0.0767989%
+
+Insert size peak (evaluated by paired-end reads): 0
+
+JSON report: fastp.json
+HTML report: /data/project/OPLL/0.rnaraw/99.public/GSE220630/02.fastp/fibula.html
+
+fastp -i /data/project/OPLL/0.rnaraw/99.public/GSE220630/01.fasta/fibula_1.fastq.gz -I /data/project/OPLL/0.rnaraw/99.public/GSE220630/01.fasta/fibula_2.fastq.gz -o /data/project/OPLL/0.rnaraw/99.public/GSE220630/02.fastp/fibula_1.fastq.gz -O /data/project/OPLL/0.rnaraw/99.public/GSE220630/02.fastp/fibula_2.fastq.gz -p -w 5 -5 -3 --trim_poly_g --trim_poly_x --length_required 15 -y --detect_adapter_for_pe -h /data/project/OPLL/0.rnaraw/99.public/GSE220630/02.fastp/fibula.html 
+fastp v0.21.0, time used: 176 seconds

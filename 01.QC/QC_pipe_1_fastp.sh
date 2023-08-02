@@ -2,7 +2,7 @@
 #$ -cwd
 #$ -S /bin/bash
 
-if ! options=$(getopt -o h --long Sample_ID:,FASTQ_PATH:,TRIM_PATH:, -- "$@")
+if ! options=$(getopt -o h --long ID:,FASTQ_DIR:,FASTP_DIR_GZ:,FASTP_DIR_UNZIP:, -- "$@")
 then
     echo "ERROR: invalid options"
     exit 1
@@ -15,14 +15,17 @@ while true; do
         -h|--help)
             echo "Usage"
         shift ;;
-        --Sample_ID)
-            Sample_ID=$2
+        --ID)
+            ID=$2
         shift 2 ;;
-        --FASTQ_PATH)
-            FASTQ_PATH=$2
+        --FASTQ_DIR)
+            FASTQ_DIR=$2
         shift 2 ;;
-        --TRIM_PATH)
-            TRIM_PATH=$2
+        --FASTP_DIR_GZ)
+            FASTP_DIR_GZ=$2
+        shift 2 ;;
+        --FASTP_DIR_UNZIP)
+            FASTP_DIR_UNZIP=$2
         shift 2 ;;
         --)
             shift
@@ -31,11 +34,11 @@ while true; do
 done
 
 
-echo -e $Sample_ID"\n"$FASTQ_PATH"\n"$TRIM_PATH
+echo -e "ID: "$ID"\nFASQT_DIR: "$FASTQ_DIR"\nFQSTP_DIR_GZ: "$FASTP_DIR_GZ"\nFQSTP_DIR_UNZIP: "$FASTP_DIR_UNZIP
 
 fastp \
--i ${FASTQ_PATH}/${Sample_ID}'_1.fastq' -I ${FASTQ_PATH}/${Sample_ID}'_2.fastq' \
--o ${TRIM_PATH}/${Sample_ID}".R1.fq" -O ${TRIM_PATH}/${Sample_ID}".R2.fq" \
+-i ${FASTQ_DIR}/${ID}"_1.fastq.gz" -I ${FASTQ_DIR}/${ID}"_2.fastq.gz" \
+-o ${FASTP_DIR_GZ}/${ID}"_1.fastq.gz" -O ${FASTP_DIR_GZ}/${ID}"_2.fastq.gz" \
 -p \
 -w 5 \
 -5 \
@@ -44,7 +47,10 @@ fastp \
 --trim_poly_x \
 --length_required 15 \
 -y --detect_adapter_for_pe \
--h ${TRIM_PATH}/${Sample_ID}'.html'
+-h ${FASTP_DIR_GZ}/${ID}'.html'
 
-gzip ${TRIM_PATH}/${Sample_ID}".R1.fq"
-gzip ${TRIM_PATH}/${Sample_ID}".R2.fq"
+
+cp -f ${FASTP_DIR_GZ}/${ID}"_1.fastq.gz"  ${FASTP_DIR_UNZIP}/${ID}"_1.fastq.gz" 
+gunzip ${FASTP_DIR_UNZIP}/${ID}"_1.fastq.gz" 
+cp -f ${FASTP_DIR_GZ}/${ID}"_2.fastq.gz"  ${FASTP_DIR_UNZIP}/${ID}"_2.fastq.gz" 
+gunzip ${FASTP_DIR_UNZIP}/${ID}"_2.fastq.gz" 

@@ -1,0 +1,28 @@
+***Start_time: Mon Jul 24 17:27:09 KST 2023
+PLATFORM=Illumina
+PROJECTDIR=/data/project/OPLL
+REF=/data/project/OPLL/01.bulkRNA/03.index
+BAM_DIR=/data/project/OPLL/01.bulkRNA/02.bam/230621
+FASTP_DIR_GZ=/data/project/OPLL/01.bulkRNA/01.fastp/gz/230621
+FASTQ1=230621-LF_1.fastq.gz
+FASTQ2=230621-LF-2_2.fastq.gz
+SAMPLE=230621-LF
+Jul 24 17:27:09 ..... started STAR run
+Jul 24 17:27:10 ..... loading genome
+Jul 24 17:27:34 ..... started 1st pass mapping
+step1 done
+Mon Jul 24 17:36:24 KST 2023
+Tool returned:
+0
+AddRG done
+Mon Jul 24 17:36:26 KST 2023
+Tool returned:
+0
+MarkDuplicate done
+Mon Jul 24 17:36:31 KST 2023
+SplitNCigarReads done
+Mon Jul 24 17:36:33 KST 2023
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: Mon Jul 24 17:36:33 KST 2023

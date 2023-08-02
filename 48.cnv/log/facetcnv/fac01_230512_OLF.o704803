@@ -1,0 +1,31 @@
+***Start_time: 2023. 06. 20. (화) 12:15:30 KST
+cnv_facets.R -t /data/project/OPLL/02.WES/02.Align/hg38/OLF/05.Final_bam/230512_OLF.bam -n /data/project/OPLL/02.WES/02.Align/hg38/Blood/05.Final_bam/230512_Blood.bam -vcf /data/public/dbSNP/b154/GRCh38/GCF_000001405.38.re.common.vcf.gz --targets /home/goldpm1/resources/TWIST2_exome/Twist_Exome_RefSeq_targets_added_chrM_hg38.bed -o /data/project/OPLL/02.WES/11.cnv/5.facetcnv/230512/OLF/230512 -g hg38
+Finished in 47.470000 seconds.
+Finished in 55.590000 seconds.
+Finished in 43.490000 seconds.
+Finished in 35.590000 seconds.
+Finished in 36.220000 seconds.
+Finished in 30.540000 seconds.
+Finished in 37.030000 seconds.
+Finished in 25.780000 seconds.
+Finished in 30.180000 seconds.
+Finished in 29.840000 seconds.
+Finished in 38.630000 seconds.
+Finished in 38.400000 seconds.
+Finished in 17.940000 seconds.
+Finished in 22.130000 seconds.
+Finished in 23.960000 seconds.
+Finished in 27.590000 seconds.
+Finished in 33.810000 seconds.
+Finished in 13.910000 seconds.
+Finished in 35.170000 seconds.
+Finished in 16.680000 seconds.
+Finished in 8.650000 seconds.
+Finished in 14.130000 seconds.
+Finished in 17.300000 seconds.
+Finished in 1.960000 seconds.
+Finished in 0.150000 seconds.
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 20. (화) 12:32:10 KST

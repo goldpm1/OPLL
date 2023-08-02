@@ -1,0 +1,86 @@
+
+EXITING because of FATAL ERROR in reads input: short read sequence line: 0
+Read Name=@A00155:652:HH3JKDSX7:2:2137:19714:22764
+Read Sequence====
+DEF_readNameLengthMax=50000
+DEF_readSeqLengthMax=650
+
+Jul 24 17:36:23 ...... FATAL ERROR, exiting
+Using GATK jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx8G -Djava.io.tmpdir=/data/project/OPLL/temp/ -jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar AddOrReplaceReadGroups --INPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.Aligned.sortedByCoord.out.bam --OUTPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.RGadded.bam --SORT_ORDER coordinate --RGLB OPLL --RGPL Illumina --RGPU Illumina --RGSM 230621-LF --CREATE_INDEX true --VALIDATION_STRINGENCY SILENT
+17:36:26.196 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Mon Jul 24 17:36:26 KST 2023] AddOrReplaceReadGroups --INPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.Aligned.sortedByCoord.out.bam --OUTPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.RGadded.bam --SORT_ORDER coordinate --RGLB OPLL --RGPL Illumina --RGPU Illumina --RGSM 230621-LF --VALIDATION_STRINGENCY SILENT --CREATE_INDEX true --RGID 1 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Jul 24, 2023 5:36:26 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Mon Jul 24 17:36:26 KST 2023] Executing as goldpm1@compute08 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.8+10-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.3.0
+INFO	2023-07-24 17:36:26	AddOrReplaceReadGroups	Created read-group ID=1 PL=Illumina LB=OPLL SM=230621-LF
+
+[Mon Jul 24 17:36:26 KST 2023] picard.sam.AddOrReplaceReadGroups done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2151677952
+Using GATK jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx8G -Djava.io.tmpdir=/data/project/OPLL/temp/ -jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar MarkDuplicates --INPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.RGadded.bam --OUTPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.RGadded.marked.bam --METRICS_FILE /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.RGadded.marked.metrics --CREATE_INDEX true --VALIDATION_STRINGENCY SILENT
+17:36:29.608 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Mon Jul 24 17:36:29 KST 2023] MarkDuplicates --INPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.RGadded.bam --OUTPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.RGadded.marked.bam --METRICS_FILE /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.RGadded.marked.metrics --VALIDATION_STRINGENCY SILENT --CREATE_INDEX true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Jul 24, 2023 5:36:29 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Mon Jul 24 17:36:29 KST 2023] Executing as goldpm1@compute08 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.8+10-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.3.0
+INFO	2023-07-24 17:36:29	MarkDuplicates	Start of doWork freeMemory: 111771736; totalMemory: 140509184; maxMemory: 8589934592
+INFO	2023-07-24 17:36:29	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-07-24 17:36:29	MarkDuplicates	Will retain up to 31122951 data points before spilling to disk.
+INFO	2023-07-24 17:36:30	MarkDuplicates	Read 0 records. 0 pairs never matched.
+INFO	2023-07-24 17:36:30	MarkDuplicates	After buildSortedReadEndLists freeMemory: 212313296; totalMemory: 492830720; maxMemory: 8589934592
+INFO	2023-07-24 17:36:30	MarkDuplicates	Will retain up to 268435456 duplicate indices before spilling to disk.
+INFO	2023-07-24 17:36:30	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2023-07-24 17:36:30	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2023-07-24 17:36:30	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-07-24 17:36:30	MarkDuplicates	After generateDuplicateIndexes freeMemory: 1479056984; totalMemory: 3657433088; maxMemory: 8589934592
+INFO	2023-07-24 17:36:30	MarkDuplicates	Marking 0 records as duplicates.
+INFO	2023-07-24 17:36:30	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2023-07-24 17:36:30	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2023-07-24 17:36:30	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-07-24 17:36:30	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-07-24 17:36:30	MarkDuplicates	Getting Memory Stats.
+INFO	2023-07-24 17:36:30	MarkDuplicates	Before output close freeMemory: 111159008; totalMemory: 140509184; maxMemory: 8589934592
+INFO	2023-07-24 17:36:30	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-07-24 17:36:30	MarkDuplicates	After output close freeMemory: 90246080; totalMemory: 119537664; maxMemory: 8589934592
+[Mon Jul 24 17:36:30 KST 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.02 minutes.
+Runtime.totalMemory()=119537664
+Using GATK jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx8G -Djava.io.tmpdir=/data/project/OPLL/temp/ -jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar SplitNCigarReads -R /data/resource/reference/human/UCSC/hg38/WholeGenomeFasta/genome.fa -I /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.RGadded.marked.bam -O /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF.bam
+17:36:33.107 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jul 24, 2023 5:36:33 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+17:36:33.245 INFO  SplitNCigarReads - ------------------------------------------------------------
+17:36:33.246 INFO  SplitNCigarReads - The Genome Analysis Toolkit (GATK) v4.2.3.0
+17:36:33.246 INFO  SplitNCigarReads - For support and documentation go to https://software.broadinstitute.org/gatk/
+17:36:33.246 INFO  SplitNCigarReads - Executing as goldpm1@compute08 on Linux v3.10.0-957.el7.x86_64 amd64
+17:36:33.246 INFO  SplitNCigarReads - Java runtime: OpenJDK 64-Bit Server VM v11.0.8+10-LTS
+17:36:33.246 INFO  SplitNCigarReads - Start Date/Time: July 24, 2023 at 5:36:33 PM KST
+17:36:33.246 INFO  SplitNCigarReads - ------------------------------------------------------------
+17:36:33.246 INFO  SplitNCigarReads - ------------------------------------------------------------
+17:36:33.247 INFO  SplitNCigarReads - HTSJDK Version: 2.24.1
+17:36:33.247 INFO  SplitNCigarReads - Picard Version: 2.25.4
+17:36:33.247 INFO  SplitNCigarReads - Built for Spark Version: 2.4.5
+17:36:33.247 INFO  SplitNCigarReads - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+17:36:33.247 INFO  SplitNCigarReads - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+17:36:33.247 INFO  SplitNCigarReads - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+17:36:33.247 INFO  SplitNCigarReads - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+17:36:33.247 INFO  SplitNCigarReads - Deflater: IntelDeflater
+17:36:33.247 INFO  SplitNCigarReads - Inflater: IntelInflater
+17:36:33.247 INFO  SplitNCigarReads - GCS max retries/reopens: 20
+17:36:33.247 INFO  SplitNCigarReads - Requester pays: disabled
+17:36:33.247 INFO  SplitNCigarReads - Initializing engine
+17:36:33.384 INFO  SplitNCigarReads - Shutting down engine
+[July 24, 2023 at 5:36:33 PM KST] org.broadinstitute.hellbender.tools.walkers.rnaseq.SplitNCigarReads done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=2151677952
+***********************************************************************
+
+A USER ERROR has occurred: Input files reference and reads have incompatible contigs: No overlapping contigs found.
+  reference contigs = [chr1, chr2, chr3, chr4, chr5, chr6, chr7, chr8, chr9, chr10, chr11, chr12, chr13, chr14, chr15, chr16, chr17, chr18, chr19, chr20, chr21, chr22, chrX, chrY, chrM, chr1_KI270706v1_random, chr1_KI270707v1_random, chr1_KI270708v1_random, chr1_KI270709v1_random, chr1_KI270710v1_random, chr1_KI270711v1_random, chr1_KI270712v1_random, chr1_KI270713v1_random, chr1_KI270714v1_random, chr2_KI270715v1_random, chr2_KI270716v1_random, chr3_GL000221v1_random, chr4_GL000008v2_random, chr5_GL000208v1_random, chr9_KI270717v1_random, chr9_KI270718v1_random, chr9_KI270719v1_random, chr9_KI270720v1_random, chr11_KI270721v1_random, chr14_GL000009v2_random, chr14_GL000225v1_random, chr14_KI270722v1_random, chr14_GL000194v1_random, chr14_KI270723v1_random, chr14_KI270724v1_random, chr14_KI270725v1_random, chr14_KI270726v1_random, chr15_KI270727v1_random, chr16_KI270728v1_random, chr17_GL000205v2_random, chr17_KI270729v1_random, chr17_KI270730v1_random, chr22_KI270731v1_random, chr22_KI270732v1_random, chr22_KI270733v1_random, chr22_KI270734v1_random, chr22_KI270735v1_random, chr22_KI270736v1_random, chr22_KI270737v1_random, chr22_KI270738v1_random, chr22_KI270739v1_random, chrY_KI270740v1_random, chrUn_KI270302v1, chrUn_KI270304v1, chrUn_KI270303v1, chrUn_KI270305v1, chrUn_KI270322v1, chrUn_KI270320v1, chrUn_KI270310v1, chrUn_KI270316v1, chrUn_KI270315v1, chrUn_KI270312v1, chrUn_KI270311v1, chrUn_KI270317v1, chrUn_KI270412v1, chrUn_KI270411v1, chrUn_KI270414v1, chrUn_KI270419v1, chrUn_KI270418v1, chrUn_KI270420v1, chrUn_KI270424v1, chrUn_KI270417v1, chrUn_KI270422v1, chrUn_KI270423v1, chrUn_KI270425v1, chrUn_KI270429v1, chrUn_KI270442v1, chrUn_KI270466v1, chrUn_KI270465v1, chrUn_KI270467v1, chrUn_KI270435v1, chrUn_KI270438v1, chrUn_KI270468v1, chrUn_KI270510v1, chrUn_KI270509v1, chrUn_KI270518v1, chrUn_KI270508v1, chrUn_KI270516v1, chrUn_KI270512v1, chrUn_KI270519v1, chrUn_KI270522v1, chrUn_KI270511v1, chrUn_KI270515v1, chrUn_KI270507v1, chrUn_KI270517v1, chrUn_KI270529v1, chrUn_KI270528v1, chrUn_KI270530v1, chrUn_KI270539v1, chrUn_KI270538v1, chrUn_KI270544v1, chrUn_KI270548v1, chrUn_KI270583v1, chrUn_KI270587v1, chrUn_KI270580v1, chrUn_KI270581v1, chrUn_KI270579v1, chrUn_KI270589v1, chrUn_KI270590v1, chrUn_KI270584v1, chrUn_KI270582v1, chrUn_KI270588v1, chrUn_KI270593v1, chrUn_KI270591v1, chrUn_KI270330v1, chrUn_KI270329v1, chrUn_KI270334v1, chrUn_KI270333v1, chrUn_KI270335v1, chrUn_KI270338v1, chrUn_KI270340v1, chrUn_KI270336v1, chrUn_KI270337v1, chrUn_KI270363v1, chrUn_KI270364v1, chrUn_KI270362v1, chrUn_KI270366v1, chrUn_KI270378v1, chrUn_KI270379v1, chrUn_KI270389v1, chrUn_KI270390v1, chrUn_KI270387v1, chrUn_KI270395v1, chrUn_KI270396v1, chrUn_KI270388v1, chrUn_KI270394v1, chrUn_KI270386v1, chrUn_KI270391v1, chrUn_KI270383v1, chrUn_KI270393v1, chrUn_KI270384v1, chrUn_KI270392v1, chrUn_KI270381v1, chrUn_KI270385v1, chrUn_KI270382v1, chrUn_KI270376v1, chrUn_KI270374v1, chrUn_KI270372v1, chrUn_KI270373v1, chrUn_KI270375v1, chrUn_KI270371v1, chrUn_KI270448v1, chrUn_KI270521v1, chrUn_GL000195v1, chrUn_GL000219v1, chrUn_GL000220v1, chrUn_GL000224v1, chrUn_KI270741v1, chrUn_GL000226v1, chrUn_GL000213v1, chrUn_KI270743v1, chrUn_KI270744v1, chrUn_KI270745v1, chrUn_KI270746v1, chrUn_KI270747v1, chrUn_KI270748v1, chrUn_KI270749v1, chrUn_KI270750v1, chrUn_KI270751v1, chrUn_KI270752v1, chrUn_KI270753v1, chrUn_KI270754v1, chrUn_KI270755v1, chrUn_KI270756v1, chrUn_KI270757v1, chrUn_GL000214v1, chrUn_KI270742v1, chrUn_GL000216v2, chrUn_GL000218v1, chrEBV]
+  reads contigs = []
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.

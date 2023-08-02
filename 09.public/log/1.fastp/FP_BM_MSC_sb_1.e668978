@@ -1,0 +1,52 @@
+Detecting adapter sequence for read1...
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+Detecting adapter sequence for read2...
+>Nextera_LMP_Read2_External_Adapter
+GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 41157338
+total bases: 4156891138
+Q20 bases: 4067241567(97.8434%)
+Q30 bases: 3923621914(94.3884%)
+
+Read2 before filtering:
+total reads: 41157338
+total bases: 4156891138
+Q20 bases: 3957052865(95.1926%)
+Q30 bases: 3720673503(89.5062%)
+
+Read1 after filtering:
+total reads: 39039777
+total bases: 3918911817
+Q20 bases: 3867812177(98.6961%)
+Q30 bases: 3750762850(95.7093%)
+
+Read2 aftering filtering:
+total reads: 39039777
+total bases: 3909986158
+Q20 bases: 3798232272(97.1418%)
+Q30 bases: 3604856253(92.1961%)
+
+Filtering result:
+reads passed filter: 78079554
+reads failed due to low quality: 1775872
+reads failed due to too many N: 19562
+reads failed due to too short: 2325694
+reads failed due to low complexity: 113994
+reads with adapter trimmed: 5380068
+bases trimmed due to adapters: 106393515
+reads with polyX in 3' end: 752691
+bases trimmed in polyX tail: 19048408
+
+Duplication rate: 9.72193%
+
+Insert size peak (evaluated by paired-end reads): 148
+
+JSON report: fastp.json
+HTML report: /data/project/OPLL/0.rnaraw/99.public/GSE102312/02.fastp/BM_MSC_sb_1.html
+
+fastp -i /data/project/OPLL/0.rnaraw/99.public/GSE102312/01.fasta/BM_MSC_sb_1_1.fastq.gz -I /data/project/OPLL/0.rnaraw/99.public/GSE102312/01.fasta/BM_MSC_sb_1_2.fastq.gz -o /data/project/OPLL/0.rnaraw/99.public/GSE102312/02.fastp/BM_MSC_sb_1_1.fastq.gz -O /data/project/OPLL/0.rnaraw/99.public/GSE102312/02.fastp/BM_MSC_sb_1_2.fastq.gz -p -w 5 -5 -3 --trim_poly_g --trim_poly_x --length_required 15 -y --detect_adapter_for_pe -h /data/project/OPLL/0.rnaraw/99.public/GSE102312/02.fastp/BM_MSC_sb_1.html 
+fastp v0.21.0, time used: 396 seconds

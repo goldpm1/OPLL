@@ -1,0 +1,98 @@
+[2023-06-20 12:30:06] Loading file /data/project/OPLL/02.WES/11.cnv/5.facetcnv/230512/OLF/230512.csv.gz...
+[2023-06-20 12:30:20] Plotting histogram of coverage...
+[2023-06-20 12:30:51] Preprocessing sample...
+[2023-06-20 12:30:54] Processing sample...
+[2023-06-20 12:30:58] Fitting model...
+[2023-06-20 12:30:58] Writing output
+[2023-06-20 12:30:58] Plotting genome...
+[2023-06-20 12:30:59] Plotting spider...
+R version 4.2.0 (2022-04-22)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: CentOS Linux 7 (Core)
+
+Matrix products: default
+BLAS:   /usr/lib64/libblas.so.3.4.2
+LAPACK: /usr/lib64/liblapack.so.3.4.2
+
+locale:
+ [1] LC_CTYPE=ko_KR.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=ko_KR.UTF-8        LC_COLLATE=ko_KR.UTF-8    
+ [5] LC_MONETARY=ko_KR.UTF-8    LC_MESSAGES=ko_KR.UTF-8   
+ [7] LC_PAPER=ko_KR.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=ko_KR.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] parallel  stats4    stats     graphics  grDevices utils     datasets 
+[8] methods   base     
+
+other attached packages:
+ [1] gridExtra_2.3        ggplot2_3.4.2        Rsamtools_2.14.0    
+ [4] Biostrings_2.66.0    XVector_0.38.0       GenomicRanges_1.50.2
+ [7] GenomeInfoDb_1.34.9  IRanges_2.32.0       S4Vectors_0.36.2    
+[10] BiocGenerics_0.44.0  data.table_1.14.8    facets_0.5.14       
+[13] pctGCdata_0.3.0      argparse_2.2.2      
+
+loaded via a namespace (and not attached):
+ [1] compiler_4.2.0         pillar_1.9.0           bitops_1.0-7          
+ [4] tools_4.2.0            zlibbioc_1.44.0        jsonlite_1.8.5        
+ [7] lifecycle_1.0.3        tibble_3.2.1           gtable_0.3.3          
+[10] pkgconfig_2.0.3        rlang_1.1.1            cli_3.6.1             
+[13] findpython_1.0.8       GenomeInfoDbData_1.2.9 withr_2.5.0           
+[16] dplyr_1.1.2            systemfonts_1.0.4      generics_0.1.3        
+[19] vctrs_0.6.3            tidyselect_1.2.0       grid_4.2.0            
+[22] glue_1.6.2             R6_2.5.1               textshaping_0.3.6     
+[25] fansi_1.0.4            BiocParallel_1.32.6    farver_2.1.1          
+[28] magrittr_2.0.3         scales_1.2.1           codetools_0.2-19      
+[31] colorspace_2.1-0       ragg_1.2.5             labeling_0.4.2        
+[34] utf8_1.2.3             RCurl_1.98-1.12        munsell_0.5.0         
+[37] crayon_1.5.2          
+[2023-06-20 12:31:13] Loading file /data/project/OPLL/02.WES/11.cnv/5.facetcnv/230512/OLF/230512.csv.gz...
+[2023-06-20 12:31:26] Plotting histogram of coverage...
+[2023-06-20 12:31:59] Preprocessing sample...
+[2023-06-20 12:32:02] Processing sample...
+[2023-06-20 12:32:06] Fitting model...
+[2023-06-20 12:32:07] Writing output
+[2023-06-20 12:32:07] Plotting genome...
+[2023-06-20 12:32:09] Plotting spider...
+R version 4.2.0 (2022-04-22)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: CentOS Linux 7 (Core)
+
+Matrix products: default
+BLAS:   /usr/lib64/libblas.so.3.4.2
+LAPACK: /usr/lib64/liblapack.so.3.4.2
+
+locale:
+ [1] LC_CTYPE=ko_KR.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=ko_KR.UTF-8        LC_COLLATE=ko_KR.UTF-8    
+ [5] LC_MONETARY=ko_KR.UTF-8    LC_MESSAGES=ko_KR.UTF-8   
+ [7] LC_PAPER=ko_KR.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=ko_KR.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] parallel  stats4    stats     graphics  grDevices utils     datasets 
+[8] methods   base     
+
+other attached packages:
+ [1] gridExtra_2.3        ggplot2_3.4.2        Rsamtools_2.14.0    
+ [4] Biostrings_2.66.0    XVector_0.38.0       GenomicRanges_1.50.2
+ [7] GenomeInfoDb_1.34.9  IRanges_2.32.0       S4Vectors_0.36.2    
+[10] BiocGenerics_0.44.0  data.table_1.14.8    facets_0.5.14       
+[13] pctGCdata_0.3.0      argparse_2.2.2      
+
+loaded via a namespace (and not attached):
+ [1] compiler_4.2.0         pillar_1.9.0           bitops_1.0-7          
+ [4] tools_4.2.0            zlibbioc_1.44.0        jsonlite_1.8.5        
+ [7] lifecycle_1.0.3        tibble_3.2.1           gtable_0.3.3          
+[10] pkgconfig_2.0.3        rlang_1.1.1            cli_3.6.1             
+[13] findpython_1.0.8       GenomeInfoDbData_1.2.9 withr_2.5.0           
+[16] dplyr_1.1.2            systemfonts_1.0.4      generics_0.1.3        
+[19] vctrs_0.6.3            tidyselect_1.2.0       grid_4.2.0            
+[22] glue_1.6.2             R6_2.5.1               textshaping_0.3.6     
+[25] fansi_1.0.4            BiocParallel_1.32.6    farver_2.1.1          
+[28] magrittr_2.0.3         scales_1.2.1           codetools_0.2-19      
+[31] colorspace_2.1-0       ragg_1.2.5             labeling_0.4.2        
+[34] utf8_1.2.3             RCurl_1.98-1.12        munsell_0.5.0         
+[37] crayon_1.5.2          

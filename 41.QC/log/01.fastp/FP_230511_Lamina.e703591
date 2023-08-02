@@ -1,0 +1,50 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 66534776
+total bases: 6720012376
+Q20 bases: 6579292649(97.906%)
+Q30 bases: 6315689314(93.9833%)
+
+Read2 before filtering:
+total reads: 66534776
+total bases: 6720012376
+Q20 bases: 6496311222(96.6711%)
+Q30 bases: 6128314414(91.195%)
+
+Read1 after filtering:
+total reads: 66043606
+total bases: 6652916249
+Q20 bases: 6524078180(98.0634%)
+Q30 bases: 6267484545(94.2066%)
+
+Read2 aftering filtering:
+total reads: 66043606
+total bases: 6651515376
+Q20 bases: 6454579889(97.0392%)
+Q30 bases: 6095501249(91.6408%)
+
+Filtering result:
+reads passed filter: 132087212
+reads failed due to low quality: 881668
+reads failed due to too many N: 0
+reads failed due to too short: 50216
+reads failed due to low complexity: 50456
+reads with adapter trimmed: 778934
+bases trimmed due to adapters: 16291631
+reads with polyX in 3' end: 838171
+bases trimmed in polyX tail: 12548589
+
+Duplication rate: 10.0088%
+
+Insert size peak (evaluated by paired-end reads): 171
+
+JSON report: fastp.json
+HTML report: /data/project/OPLL/02.WES/01.QC/01.fastp/Lamina/230511.html
+
+fastp -i /data/project/OPLL/02.WES/01.QC/00.raw/Lamina/230511_Lamina_1.fastq.gz -I /data/project/OPLL/02.WES/01.QC/00.raw/Lamina/230511_Lamina_2.fastq.gz -o /data/project/OPLL/02.WES/01.QC/01.fastp/Lamina/230511_Lamina.R1.fastq -O /data/project/OPLL/02.WES/01.QC/01.fastp/Lamina/230511_Lamina.R2.fastq -p -w 5 -5 -3 --trim_poly_g --trim_poly_x --length_required 15 -y --detect_adapter_for_pe -h /data/project/OPLL/02.WES/01.QC/01.fastp/Lamina/230511.html 
+fastp v0.21.0, time used: 434 seconds

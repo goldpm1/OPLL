@@ -1,0 +1,10 @@
+***Start_time: 2023. 06. 16. (금) 23:00:48 KST
+/data/project/Meningioma/06.hc/03.HF/230127/Cortex/230127_Cortex.DP100.vcf
+/home/goldpm1/reference/genome.fa
+/data/project/Meningioma/06.hc/04.vep/230127/Cortex/230127_Cortex.DP100.vep.vcf
+bgzip start
+bgzip end
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 16. (금) 23:36:40 KST

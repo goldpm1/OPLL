@@ -1,0 +1,51 @@
+***Start_time: 2023. 06. 21. (수) 23:29:30 KST
+python3 mutect_pipe_21.rescue.py     --Sample_ID 230512 --TISSUE OLF --NUM 12     --MULTIPLE_VCF_PATH /data/project/OPLL/02.WES/04.mutect/03.vep/230512_12.MT2.FMC.HF.RMBLACK.vep.vcf  --MULTIPLE_VCF_GZ_PATH /data/project/OPLL/02.WES/04.mutect/03.vep/230512_12.MT2.FMC.HF.RMBLACK.vep.vcf.gz     --INDIVIDUAL_VCF_PATH /data/project/OPLL/02.WES/04.mutect/03.vep/230512_OLF.MT2.FMC.HF.RMBLACK.vep.vcf --INDIVIDUAL_VCF_GZ_PATH /data/project/OPLL/02.WES/04.mutect/03.vep/230512_OLF.MT2.FMC.HF.RMBLACK.vep.vcf.gz     --INDIVIDUAL_RESCUED_VCF_PATH /data/project/OPLL/02.WES/04.mutect/04.rescue/230512_OLF.MT2.FMC.HF.RMBLACK.vep.rescue.vcf --INDIVIDUAL_RESCUED_VCF_GZ_PATH /data/project/OPLL/02.WES/04.mutect/04.rescue/230512_OLF.MT2.FMC.HF.RMBLACK.vep.rescue.vcf.gz     --INDIVIDUAL_UNIQUE_VCF_PATH /data/project/OPLL/02.WES/04.mutect/05.unique/230512_OLF.MT2.FMC.HF.RMBLACK.vep.rescue.unique.vcf --INDIVIDUAL_UNIQUE_VCF_GZ_PATH /data/project/OPLL/02.WES/04.mutect/05.unique/230512_OLF.MT2.FMC.HF.RMBLACK.vep.rescue.unique.vcf.gz
+output_file_exists = False
+output_file_unique_exists = False
+
+Mutect call ∩ Individual call	['chr1', '108827282', '.', 'T', 'C']
+Mutect call ∩ Individual call	['chr1', '159936454', '.', 'G', 'A']
+Mutect call ∩ Individual call	['chr11', '26534530', '.', 'G', 'A']
+Individual call - Multiple call	['chr1', '15944798', '.', 'C', 'T']
+Individual call - Multiple call	['chr2', '218618651', '.', 'T', 'C']
+Individual call - Multiple call	['chr3', '141444496', '.', 'C', 'T']
+Individual call - Multiple call	['chr7', '75557680', '.', 'G', 'A']
+Individual call - Multiple call	['chr9', '123367583', '.', 'C', 'T']
+Individual call - Multiple call	['chr12', '123523607', '.', 'C', 'T']
+Individual call - Multiple call	['chr15', '77614158', '.', 'G', 'A']
+Individual call - Multiple call	['chr15', '82765923', '.', 'G', 'A']
+Individual call - Multiple call	['chr16', '29844657', '.', 'G', 'A']
+Individual call - Multiple call	['chr17', '1483016', '.', 'G', 'A']
+Individual call - Multiple call	['chr19', '47264832', '.', 'C', 'T']
+Individual call - Multiple call	['chr19', '50629298', '.', 'C', 'T']
+Individual call - Multiple call	['chr20', '279306', '.', 'C', 'T']
+Individual call - Multiple call	['chr20', '20369189', '.', 'G', 'A']
+Individual call - Multiple call	['chr20', '62414334', '.', 'C', 'T']
+Individual call - Multiple call	['chr20', '63738844', '.', 'T', 'C']
+Multiple call - Individual call	['chr1', '19173008', '.', 'G', 'A']
+Multiple call - Individual call	['chr1', '52384659', '.', 'C', 'T']
+Multiple call - Individual call	['chr1', '149943895', '.', 'G', 'A']
+Multiple call - Individual call	['chr1', '193097697', '.', 'C', 'T']
+Multiple call - Individual call	['chr2', '63055811', '.', 'C', 'T']
+Multiple call - Individual call	['chr2', '73250394', '.', 'C', 'T']
+Multiple call - Individual call	['chr3', '37629308', '.', 'A', 'G']
+Multiple call - Individual call	['chr4', '2596278', '.', 'C', 'T']
+Multiple call - Individual call	['chr4', '6620009', '.', 'G', 'A']
+Multiple call - Individual call	['chr4', '56323507', '.', 'G', 'A']
+Multiple call - Individual call	['chr5', '177539089', '.', 'C', 'T']
+Multiple call - Individual call	['chr5', '177592686', '.', 'CG', 'C']
+Multiple call - Individual call	['chr6', '37021617', '.', 'T', 'C']
+Multiple call - Individual call	['chr6', '134942427', '.', 'G', 'A']
+Multiple call - Individual call	['chr7', '44106287', '.', 'T', 'C']
+Multiple call - Individual call	['chr8', '35235831', '.', 'G', 'A']
+Multiple call - Individual call	['chr8', '61526011', '.', 'T', 'C']
+Multiple call - Individual call	['chr9', '87148735', '.', 'G', 'A']
+Multiple call - Individual call	['chr13', '42607865', '.', 'TG', 'T']
+Multiple call - Individual call	['chr16', '8847910', '.', 'C', 'T']
+Multiple call - Individual call	['chr17', '5109316', '.', 'T', 'C']
+Multiple call - Individual call	['chr20', '63862251', '.', 'G', 'A']
+Multiple call - Individual call	['chr22', '50287920', '.', 'C', 'T']
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 21. (수) 23:30:02 KST

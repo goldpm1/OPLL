@@ -1,0 +1,10 @@
+***Start_time: 2023. 06. 16. (금) 22:40:53 KST
+/data/project/Meningioma/06.hc/03.HF/230323/Blood/230323_Blood.DP100.vcf
+/home/goldpm1/reference/genome.fa
+/data/project/Meningioma/06.hc/04.vep/230323/Blood/230323_Blood.DP100.vep.vcf
+bgzip start
+bgzip end
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 16. (금) 23:25:18 KST

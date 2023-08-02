@@ -1,0 +1,52 @@
+***Start_time: 2023. 06. 21. (수) 23:29:30 KST
+python3 mutect_pipe_21.rescue.py     --Sample_ID 230512 --TISSUE Lamina --NUM 13     --MULTIPLE_VCF_PATH /data/project/OPLL/02.WES/04.mutect/03.vep/230512_13.MT2.FMC.HF.RMBLACK.vep.vcf  --MULTIPLE_VCF_GZ_PATH /data/project/OPLL/02.WES/04.mutect/03.vep/230512_13.MT2.FMC.HF.RMBLACK.vep.vcf.gz     --INDIVIDUAL_VCF_PATH /data/project/OPLL/02.WES/04.mutect/03.vep/230512_Lamina.MT2.FMC.HF.RMBLACK.vep.vcf --INDIVIDUAL_VCF_GZ_PATH /data/project/OPLL/02.WES/04.mutect/03.vep/230512_Lamina.MT2.FMC.HF.RMBLACK.vep.vcf.gz     --INDIVIDUAL_RESCUED_VCF_PATH /data/project/OPLL/02.WES/04.mutect/04.rescue/230512_Lamina.MT2.FMC.HF.RMBLACK.vep.rescue.vcf --INDIVIDUAL_RESCUED_VCF_GZ_PATH /data/project/OPLL/02.WES/04.mutect/04.rescue/230512_Lamina.MT2.FMC.HF.RMBLACK.vep.rescue.vcf.gz     --INDIVIDUAL_UNIQUE_VCF_PATH /data/project/OPLL/02.WES/04.mutect/05.unique/230512_Lamina.MT2.FMC.HF.RMBLACK.vep.rescue.unique.vcf --INDIVIDUAL_UNIQUE_VCF_GZ_PATH /data/project/OPLL/02.WES/04.mutect/05.unique/230512_Lamina.MT2.FMC.HF.RMBLACK.vep.rescue.unique.vcf.gz
+output_file_exists = False
+output_file_unique_exists = False
+
+Mutect call ∩ Individual call	['chr4', '151102986', '.', 'A', 'C']
+Mutect call ∩ Individual call	['chr7', '32558620', '.', 'T', 'C']
+Mutect call ∩ Individual call	['chr11', '11327103', '.', 'G', 'A']
+Mutect call ∩ Individual call	['chr13', '43356086', '.', 'G', 'A']
+Mutect call ∩ Individual call	['chr19', '45901517', '.', 'C', 'T']
+Individual call - Multiple call	['chr1', '24138606', '.', 'G', 'A']
+Individual call - Multiple call	['chr1', '245858524', '.', 'A', 'G']
+Individual call - Multiple call	['chr2', '36851055', '.', 'C', 'T']
+Individual call - Multiple call	['chr3', '51946220', '.', 'G', 'A']
+Individual call - Multiple call	['chr8', '99467608', '.', 'C', 'T']
+Individual call - Multiple call	['chr9', '135792084', '.', 'T', 'C']
+Individual call - Multiple call	['chr10', '43557693', '.', 'C', 'T']
+Individual call - Multiple call	['chr10', '102450800', '.', 'C', 'T']
+Individual call - Multiple call	['chr12', '4720736', '.', 'C', 'T']
+Individual call - Multiple call	['chr12', '57737145', '.', 'G', 'C']
+Individual call - Multiple call	['chr13', '94711747', '.', 'G', 'A']
+Individual call - Multiple call	['chr14', '20374451', '.', 'G', 'A']
+Individual call - Multiple call	['chr14', '34773684', '.', 'G', 'A']
+Individual call - Multiple call	['chr14', '65076545', '.', 'C', 'T']
+Individual call - Multiple call	['chr14', '73265422', '.', 'C', 'T']
+Individual call - Multiple call	['chr15', '40273655', '.', 'C', 'T']
+Individual call - Multiple call	['chr17', '40793833', '.', 'C', 'T']
+Individual call - Multiple call	['chr17', '41864902', '.', 'C', 'T']
+Individual call - Multiple call	['chr19', '2210730', '.', 'G', 'A']
+Individual call - Multiple call	['chr19', '41426097', '.', 'G', 'A']
+Individual call - Multiple call	['chr19', '48443495', '.', 'C', 'T']
+Multiple call - Individual call	['chr1', '108827282', '.', 'T', 'C']
+Multiple call - Individual call	['chr2', '61589652', '.', 'C', 'T']
+Multiple call - Individual call	['chr3', '51986541', '.', 'G', 'A']
+Multiple call - Individual call	['chr3', '196318171', '.', 'G', 'A']
+Multiple call - Individual call	['chr4', '107203932', '.', 'G', 'A']
+Multiple call - Individual call	['chr8', '20253497', '.', 'G', 'A']
+Multiple call - Individual call	['chr8', '35235831', '.', 'G', 'A']
+Multiple call - Individual call	['chr8', '61526011', '.', 'T', 'C']
+Multiple call - Individual call	['chr10', '97714203', '.', 'C', 'T']
+Multiple call - Individual call	['chr11', '26534530', '.', 'G', 'A']
+Multiple call - Individual call	['chr11', '65727658', '.', 'G', 'GGGACTGCAGCTTCCAGATCTCCTCTTCACACAGCTCTCTGGGGAAGTTGATCTT']
+Multiple call - Individual call	['chr11', '133952309', '.', 'C', 'T']
+Multiple call - Individual call	['chr14', '91481970', '.', 'A', 'T']
+Multiple call - Individual call	['chr16', '86525963', '.', 'T', 'A']
+Multiple call - Individual call	['chr17', '1483016', '.', 'G', 'A']
+Multiple call - Individual call	['chr17', '48722051', '.', 'C', 'G']
+Multiple call - Individual call	['chr19', '41850699', '.', 'A', 'T']
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 21. (수) 23:30:04 KST

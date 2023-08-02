@@ -1,0 +1,6 @@
+***Start_time: 2023. 06. 21. (수) 23:30:33 KST
+python3 mutect_pipe_23.manualmaf.py  --INPUTVCF /data/project/OPLL/02.WES/04.mutect/05.unique/230511_OLF.MT2.FMC.HF.RMBLACK.vep.rescue.unique.vcf --OUTPUT_MAF /data/project/OPLL/02.WES/04.mutect/06.maf/02.shared_no/230511_OLF.MT2.FMC.HF.RMBLACK.vep.maf --SELECTED_DB None
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 21. (수) 23:30:37 KST

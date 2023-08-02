@@ -1,0 +1,13 @@
+***Start_time: 2023. 06. 18. (일) 15:56:07 KST
+Rscript sequenza_pipe_02.R --ID 230323_Dura --hg hg19 --SEQUENZA_SMALL_SEQZ /data/project/Meningioma/11.cnv/1.seqz/hg19/2.small/230323_Dura.small.seqz.gz.removechrM.gz --SEQUENZA_OUTPUT_DIR /data/project/Meningioma/11.cnv/2.sequenza/hg19
+[1] "230323_Dura"
+[1] "hg19"
+[1] "/data/project/Meningioma/11.cnv/1.seqz/hg19/2.small/230323_Dura.small.seqz.gz.removechrM.gz"
+[1] "/data/project/Meningioma/11.cnv/2.sequenza/hg19"
+[1] "Sequenza.extract...."
+[1] "Sequenza.fit...."
+[1] "Sequenza.results..."
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 18. (일) 15:59:12 KST

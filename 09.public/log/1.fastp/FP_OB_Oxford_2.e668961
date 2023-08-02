@@ -1,0 +1,51 @@
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 12085525
+total bases: 495506525
+Q20 bases: 473601727(95.5793%)
+Q30 bases: 466061001(94.0575%)
+
+Read2 before filtering:
+total reads: 12085525
+total bases: 495506525
+Q20 bases: 440912696(88.9822%)
+Q30 bases: 425955459(85.9636%)
+
+Read1 after filtering:
+total reads: 10690717
+total bases: 431137120
+Q20 bases: 416433260(96.5895%)
+Q30 bases: 410442236(95.1999%)
+
+Read2 aftering filtering:
+total reads: 10690717
+total bases: 435454042
+Q20 bases: 413181805(94.8853%)
+Q30 bases: 406579346(93.3691%)
+
+Filtering result:
+reads passed filter: 21381434
+reads failed due to low quality: 753994
+reads failed due to too many N: 90
+reads failed due to too short: 1897618
+reads failed due to low complexity: 137914
+reads with adapter trimmed: 1621240
+bases trimmed due to adapters: 42518782
+reads with polyX in 3' end: 120791
+bases trimmed in polyX tail: 1697571
+
+Duplication rate: 27.2633%
+
+Insert size peak (evaluated by paired-end reads): 0
+
+JSON report: fastp.json
+HTML report: /data/project/OPLL/0.rnaraw/99.public/GSE227994/02.fastp/OB_Oxford_2.html
+
+fastp -i /data/project/OPLL/0.rnaraw/99.public/GSE227994/01.fasta/OB_Oxford_2_1.fastq.gz -I /data/project/OPLL/0.rnaraw/99.public/GSE227994/01.fasta/OB_Oxford_2_2.fastq.gz -o /data/project/OPLL/0.rnaraw/99.public/GSE227994/02.fastp/OB_Oxford_2_1.fastq.gz -O /data/project/OPLL/0.rnaraw/99.public/GSE227994/02.fastp/OB_Oxford_2_2.fastq.gz -p -w 5 -5 -3 --trim_poly_g --trim_poly_x --length_required 15 -y --detect_adapter_for_pe -h /data/project/OPLL/0.rnaraw/99.public/GSE227994/02.fastp/OB_Oxford_2.html 
+fastp v0.21.0, time used: 75 seconds

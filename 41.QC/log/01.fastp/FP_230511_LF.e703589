@@ -1,0 +1,50 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 64429032
+total bases: 6507332232
+Q20 bases: 6365917233(97.8268%)
+Q30 bases: 6107429307(93.8546%)
+
+Read2 before filtering:
+total reads: 64429032
+total bases: 6507332232
+Q20 bases: 6306890239(96.9198%)
+Q30 bases: 5978241506(91.8693%)
+
+Read1 after filtering:
+total reads: 63942999
+total bases: 6442994094
+Q20 bases: 6313557570(97.9911%)
+Q30 bases: 6061970357(94.0862%)
+
+Read2 aftering filtering:
+total reads: 63942999
+total bases: 6441735564
+Q20 bases: 6267638741(97.2974%)
+Q30 bases: 5947592334(92.329%)
+
+Filtering result:
+reads passed filter: 127885998
+reads failed due to low quality: 870794
+reads failed due to too many N: 0
+reads failed due to too short: 52382
+reads failed due to low complexity: 48890
+reads with adapter trimmed: 519578
+bases trimmed due to adapters: 12746035
+reads with polyX in 3' end: 796444
+bases trimmed in polyX tail: 12009239
+
+Duplication rate: 9.44748%
+
+Insert size peak (evaluated by paired-end reads): 171
+
+JSON report: fastp.json
+HTML report: /data/project/OPLL/02.WES/01.QC/01.fastp/LF/230511.html
+
+fastp -i /data/project/OPLL/02.WES/01.QC/00.raw/LF/230511_LF_1.fastq.gz -I /data/project/OPLL/02.WES/01.QC/00.raw/LF/230511_LF_2.fastq.gz -o /data/project/OPLL/02.WES/01.QC/01.fastp/LF/230511_LF.R1.fastq -O /data/project/OPLL/02.WES/01.QC/01.fastp/LF/230511_LF.R2.fastq -p -w 5 -5 -3 --trim_poly_g --trim_poly_x --length_required 15 -y --detect_adapter_for_pe -h /data/project/OPLL/02.WES/01.QC/01.fastp/LF/230511.html 
+fastp v0.21.0, time used: 475 seconds

@@ -1,0 +1,8 @@
+***Start_time: 2023. 06. 18. (일) 13:44:45 KST
+2023. 06. 18. (일) 13:44:45 KST
+python3 sequenza_pipe_02.removechrM.py     --INPUT_VCF_GZ /data/project/Meningioma/11.cnv/1.seqz/hg19/2.small/230323_Tumor.small.seqz.gz     --OUTPUT_VCF /data/project/Meningioma/11.cnv/1.seqz/hg19/2.small/230323_Tumor.small.seqz
+2023. 06. 18. (일) 15:29:57 KST
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 18. (일) 15:29:58 KST

@@ -1,0 +1,52 @@
+***Start_time: Wed Jul  5 11:13:08 KST 2023
+bash /home/goldpm1/tools/HLA-HD/hlahd.1.7.0/bin/hlahd.sh  -t 2 -m 100 -c 0.95 -f  /opt/Yonsei/HLA-HD/hlahd.1.7.0/freq_data /data/project/OPLL/01.bulkRNA/01.fastp/unzip/220605/220605-OLF-2_1.fastq /data/project/OPLL/01.bulkRNA/01.fastp/unzip/220605/220605-OLF-2_2.fastq /opt/Yonsei/HLA-HD/hlahd.1.7.0/HLA_gene.split.txt /opt/Yonsei/HLA-HD/hlahd.1.7.0/dictionary 220605-OLF-2 /data/project/OPLL/01.bulkRNA/05.HLAtyping/HLA-HD/220605
+HLA-HD version 1.7.0
+1000000 lines finished.
+2000000 lines finished.
+3000000 lines finished.
+4000000 lines finished.
+5000000 lines finished.
+6000000 lines finished.
+7000000 lines finished.
+8000000 lines finished.
+9000000 lines finished.
+10000000 lines finished.
+11000000 lines finished.
+12000000 lines finished.
+13000000 lines finished.
+14000000 lines finished.
+15000000 lines finished.
+16000000 lines finished.
+17000000 lines finished.
+18000000 lines finished.
+19000000 lines finished.
+20000000 lines finished.
+21000000 lines finished.
+1000000 lines finished.
+2000000 lines finished.
+3000000 lines finished.
+4000000 lines finished.
+5000000 lines finished.
+6000000 lines finished.
+7000000 lines finished.
+8000000 lines finished.
+9000000 lines finished.
+10000000 lines finished.
+11000000 lines finished.
+12000000 lines finished.
+13000000 lines finished.
+14000000 lines finished.
+15000000 lines finished.
+16000000 lines finished.
+17000000 lines finished.
+18000000 lines finished.
+19000000 lines finished.
+20000000 lines finished.
+21000000 lines finished.
+22000000 lines finished.
+23000000 lines finished.
+24000000 lines finished.
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: Wed Jul  5 16:27:29 KST 2023

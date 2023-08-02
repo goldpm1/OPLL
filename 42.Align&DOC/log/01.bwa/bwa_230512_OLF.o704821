@@ -1,0 +1,10 @@
+***Start_time: 2023. 06. 20. (화) 12:28:00 KST
+/home/goldpm1/reference/hg19/hg19.fa
+/data/project/OPLL/02.WES/01.QC/01.fastp/OLF/230512_OLF.R1.fastq.gz
+/data/project/OPLL/02.WES/01.QC/01.fastp/OLF/230512_OLF.R2.fastq.gz
+2023. 06. 20. (화) 13:14:51 KST
+bwamem done
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 20. (화) 13:14:52 KST

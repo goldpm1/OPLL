@@ -1,0 +1,45 @@
+Using GATK jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar DepthOfCoverage -R /home/goldpm1/reference/hg19/hg19.fa -O /data/project/OPLL/02.WES/02.Align/hg19/Lamina/06.DepthOfCoverage/230512_Lamina.depth.result -I /data/project/OPLL/02.WES/02.Align/hg19/Lamina/05.Final_bam/230512_Lamina.bam -L /home/goldpm1/resources/TWIST2_exome/Twist_Exome_RefSeq_targets_added_chrM_hg38.bed
+18:00:57.889 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 20, 2023 6:00:58 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+18:00:58.098 INFO  DepthOfCoverage - ------------------------------------------------------------
+18:00:58.099 INFO  DepthOfCoverage - The Genome Analysis Toolkit (GATK) v4.2.3.0
+18:00:58.099 INFO  DepthOfCoverage - For support and documentation go to https://software.broadinstitute.org/gatk/
+18:00:58.099 INFO  DepthOfCoverage - Executing as goldpm1@compute13 on Linux v3.10.0-957.el7.x86_64 amd64
+18:00:58.100 INFO  DepthOfCoverage - Java runtime: OpenJDK 64-Bit Server VM v11.0.8+10-LTS
+18:00:58.100 INFO  DepthOfCoverage - Start Date/Time: 2023년 6월 20일 오후 6시 0분 57초 KST
+18:00:58.100 INFO  DepthOfCoverage - ------------------------------------------------------------
+18:00:58.100 INFO  DepthOfCoverage - ------------------------------------------------------------
+18:00:58.102 INFO  DepthOfCoverage - HTSJDK Version: 2.24.1
+18:00:58.102 INFO  DepthOfCoverage - Picard Version: 2.25.4
+18:00:58.102 INFO  DepthOfCoverage - Built for Spark Version: 2.4.5
+18:00:58.103 INFO  DepthOfCoverage - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+18:00:58.103 INFO  DepthOfCoverage - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+18:00:58.103 INFO  DepthOfCoverage - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+18:00:58.103 INFO  DepthOfCoverage - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+18:00:58.103 INFO  DepthOfCoverage - Deflater: IntelDeflater
+18:00:58.103 INFO  DepthOfCoverage - Inflater: IntelInflater
+18:00:58.104 INFO  DepthOfCoverage - GCS max retries/reopens: 20
+18:00:58.104 INFO  DepthOfCoverage - Requester pays: disabled
+18:00:58.104 WARN  DepthOfCoverage - 
+
+[1m[31m   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+   Warning: DepthOfCoverage is a BETA tool and is not yet ready for use in production
+
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+
+18:00:58.104 INFO  DepthOfCoverage - Initializing engine
+18:00:58.328 INFO  FeatureManager - Using codec BEDCodec to read file file:///home/goldpm1/resources/TWIST2_exome/Twist_Exome_RefSeq_targets_added_chrM_hg38.bed
+18:00:58.593 INFO  DepthOfCoverage - Shutting down engine
+[2023년 6월 20일 오후 6시 0분 58초 KST] org.broadinstitute.hellbender.tools.walkers.coverage.DepthOfCoverage done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=2155872256
+***********************************************************************
+
+A USER ERROR has occurred: Badly formed genome unclippedLoc: Parameters to GenomeLocParser are incorrect:The genome loc coordinates 198024658-198024788 exceed the contig size (198022430)
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.

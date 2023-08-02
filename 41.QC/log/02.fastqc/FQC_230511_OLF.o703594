@@ -1,0 +1,11 @@
+***Start_time: 2023. 06. 19. (월) 15:08:44 KST
+Sample_ID: 230511
+FASTQ_PATH_1: /data/project/OPLL/02.WES/01.QC/01.fastp/OLF/230511_OLF.R1.fastq.gz
+FASTQ_PATH_2: /data/project/OPLL/02.WES/01.QC/01.fastp/OLF/230511_OLF.R2.fastq.gz
+FASTQC_DIR: /data/project/OPLL/02.WES/01.QC/02.fastqc/OLF
+Analysis complete for 230511_OLF.R1.fastq.gz
+Analysis complete for 230511_OLF.R2.fastq.gz
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 19. (월) 15:23:39 KST

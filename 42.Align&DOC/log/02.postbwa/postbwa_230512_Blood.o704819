@@ -1,0 +1,17 @@
+***Start_time: 2023. 06. 20. (화) 13:04:19 KST
+2023. 06. 20. (화) 13:32:40 KST
+Mark & Remove duplicate done
+2023. 06. 20. (화) 13:48:33 KST
+AddOrReplaceRG done
+Tool returned:
+SUCCESS
+2023. 06. 20. (화) 17:10:45 KST
+1st BaseRecalibrator done
+2023. 06. 20. (화) 17:41:53 KST
+1st ApplyBQSR done
+Left alignment done
+2023. 06. 20. (화) 17:46:37 KST
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 20. (화) 17:46:37 KST

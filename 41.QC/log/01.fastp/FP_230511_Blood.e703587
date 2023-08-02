@@ -1,0 +1,50 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 64903895
+total bases: 6555293395
+Q20 bases: 6413587419(97.8383%)
+Q30 bases: 6153388075(93.869%)
+
+Read2 before filtering:
+total reads: 64903895
+total bases: 6555293395
+Q20 bases: 6318314843(96.3849%)
+Q30 bases: 5945803129(90.7023%)
+
+Read1 after filtering:
+total reads: 64357820
+total bases: 6484615305
+Q20 bases: 6355678303(98.0116%)
+Q30 bases: 6103272879(94.1193%)
+
+Read2 aftering filtering:
+total reads: 64357820
+total bases: 6482975514
+Q20 bases: 6275770152(96.8039%)
+Q30 bases: 5912881427(91.2063%)
+
+Filtering result:
+reads passed filter: 128715640
+reads failed due to low quality: 990492
+reads failed due to too many N: 0
+reads failed due to too short: 55330
+reads failed due to low complexity: 46328
+reads with adapter trimmed: 551272
+bases trimmed due to adapters: 12851345
+reads with polyX in 3' end: 819248
+bases trimmed in polyX tail: 12102946
+
+Duplication rate: 10.2149%
+
+Insert size peak (evaluated by paired-end reads): 171
+
+JSON report: fastp.json
+HTML report: /data/project/OPLL/02.WES/01.QC/01.fastp/Blood/230511.html
+
+fastp -i /data/project/OPLL/02.WES/01.QC/00.raw/Blood/230511_Blood_1.fastq.gz -I /data/project/OPLL/02.WES/01.QC/00.raw/Blood/230511_Blood_2.fastq.gz -o /data/project/OPLL/02.WES/01.QC/01.fastp/Blood/230511_Blood.R1.fastq -O /data/project/OPLL/02.WES/01.QC/01.fastp/Blood/230511_Blood.R2.fastq -p -w 5 -5 -3 --trim_poly_g --trim_poly_x --length_required 15 -y --detect_adapter_for_pe -h /data/project/OPLL/02.WES/01.QC/01.fastp/Blood/230511.html 
+fastp v0.21.0, time used: 521 seconds

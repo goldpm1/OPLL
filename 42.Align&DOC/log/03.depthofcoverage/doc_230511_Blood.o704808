@@ -1,0 +1,8 @@
+***Start_time: 2023. 06. 20. (화) 17:34:06 KST
+java -Xmx12g -jar /opt/Yonsei/GATK/3.8-1/GenomeAnalysisTK.jar  -T DepthOfCoverage  -R /home/goldpm1/reference/hg19/hg19.fa -o /data/project/OPLL/02.WES/02.Align/hg19/Blood/06.DepthOfCoverage/230511_Blood.depth.result -I /data/project/OPLL/02.WES/02.Align/hg19/Blood/05.Final_bam/230511_Blood.bam -L /home/goldpm1/resources/TWIST2_exome/Twist_Exome_RefSeq_targets_added_chrM_hg38.bed
+2023. 06. 20. (화) 17:34:11 KST
+DepthofCoverage done
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 20. (화) 17:34:12 KST

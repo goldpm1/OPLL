@@ -2,17 +2,7 @@
 #$ -cwd
 #$ -S /bin/bash
 
-# PROJECT=$1
-# PROJECTDIR=$2
-# PLATFORM=$3
-# REF=$4
-# BAMPath=$5
-# FASTQPath=$6
-# FASTQ1=$7
-# FASTQ2=$8
-# SAMPLE=$9
-
-if ! options=$(getopt -o h --long PROJECT:,PROJECTDIR:,PLATFORM:,REF:,BAMPath:,FASTQPath:,FASTQ1:,FASTQ2:,SAMPLE: -- "$@")
+if ! options=$(getopt -o h --long PROJECT:,PROJECTDIR:,PLATFORM:,REF:,BAM_DIR:,FASTP_DIR_GZ:,FASTQ1:,FASTQ2:,SAMPLE: -- "$@")
 then
     echo "ERROR: invalid options"
     exit 1
@@ -37,11 +27,11 @@ while true; do
         --REF)
             REF=$2
             shift 2 ;;
-        --BAMPath)
-            BAMPath=$2
+        --BAM_DIR)
+            BAM_DIR=$2
             shift 2 ;;
-        --FASTQPath)
-            FASTQPath=$2
+        --FASTP_DIR_GZ)
+            FASTP_DIR_GZ=$2
             shift 2 ;;
         --FASTQ1)
             FASTQ1=$2
@@ -59,16 +49,16 @@ while true; do
 done
 
 
-echo -e "PLATFORM="$PLATFORM"\nPROJECTDIR="$PROJECTDIR"\nREF="$REF"\nBAMPath="$BAMPath"\nFASTQPath="$FASTQPath"\nFASTQ1="$FASTQ1"\nFASTQ2="$FASTQ2"\nSAMPLE="$SAMPLE
+echo -e "PLATFORM="$PLATFORM"\nPROJECTDIR="$PROJECTDIR"\nREF="$REF"\nBAM_DIR="$BAM_DIR"\nFASTP_DIR_GZ="$FASTP_DIR_GZ"\nFASTQ1="$FASTQ1"\nFASTQ2="$FASTQ2"\nSAMPLE="$SAMPLE
 
 
 #Running mapping jobs.
 STAR \
 --runThreadN 5 \
 --genomeDir $REF \
---readFilesIn $FASTQPath"/"$FASTQ1 $FASTQPath"/"$FASTQ2 \
+--readFilesIn $FASTP_DIR_GZ"/"$FASTQ1 $FASTP_DIR_GZ"/"$FASTQ2 \
 --readFilesCommand gunzip -c \
---outFileNamePrefix $BAMPath"/"$SAMPLE"." \
+--outFileNamePrefix $BAM_DIR"/"$SAMPLE"." \
 --outSAMtype BAM SortedByCoordinate \
 --twopassMode Basic \
 --outSAMattributes All
@@ -77,8 +67,8 @@ echo "step1 done"
 date
 
 gatk --java-options "-Xmx8G -Djava.io.tmpdir=$PROJECTDIR/temp/" AddOrReplaceReadGroups \
---INPUT $BAMPath"/"$SAMPLE".Aligned.sortedByCoord.out.bam" \
---OUTPUT $BAMPath"/"$SAMPLE".RGadded.bam" \
+--INPUT $BAM_DIR"/"$SAMPLE".Aligned.sortedByCoord.out.bam" \
+--OUTPUT $BAM_DIR"/"$SAMPLE".RGadded.bam" \
 --SORT_ORDER coordinate \
 --RGLB $PROJECT  \
 --RGPL $PLATFORM  \
@@ -91,9 +81,9 @@ echo "AddRG done"
 date
 
 gatk --java-options "-Xmx8G -Djava.io.tmpdir=$PROJECTDIR/temp/" MarkDuplicates \
---INPUT $BAMPath"/"$SAMPLE".RGadded.bam" \
---OUTPUT $BAMPath"/"$SAMPLE".RGadded.marked.bam" \
---METRICS_FILE $BAMPath"/"$SAMPLE".RGadded.marked.metrics" \
+--INPUT $BAM_DIR"/"$SAMPLE".RGadded.bam" \
+--OUTPUT $BAM_DIR"/"$SAMPLE".RGadded.marked.bam" \
+--METRICS_FILE $BAM_DIR"/"$SAMPLE".RGadded.marked.metrics" \
 --CREATE_INDEX true \
 --VALIDATION_STRINGENCY SILENT
 
@@ -102,11 +92,11 @@ date
 
 gatk --java-options "-Xmx8G -Djava.io.tmpdir=$PROJECTDIR/temp/" SplitNCigarReads \
 -R /data/resource/reference/human/UCSC/hg38/WholeGenomeFasta/genome.fa \
--I $BAMPath"/"$SAMPLE".RGadded.marked.bam" \
--O $BAMPath"/"$SAMPLE".bam"
+-I $BAM_DIR"/"$SAMPLE".RGadded.marked.bam" \
+-O $BAM_DIR"/"$SAMPLE".bam"
 
 echo "SplitNCigarReads done"
 date
 
 
-rm -rf $BAMPath"/"$SAMPLE".RGadded.marked.bam" $BAMPath"/"$SAMPLE".RGadded.marked.bai" $BAMPath"/"$SAMPLE".RGadded.bam" $BAMPath"/"$SAMPLE".RGadded.bai" $BAMPath"/"$SAMPLE".Aligned.sortedByCoord.out.bam" $BAMPath"/"$SAMPLE".Aligned.sortedByCoord.out.bai"
+rm -rf $BAM_DIR"/"$SAMPLE".RGadded.marked.bam" $BAM_DIR"/"$SAMPLE".RGadded.marked.bai" $BAM_DIR"/"$SAMPLE".RGadded.bam" $BAM_DIR"/"$SAMPLE".RGadded.bai" $BAM_DIR"/"$SAMPLE".Aligned.sortedByCoord.out.bam" $BAM_DIR"/"$SAMPLE".Aligned.sortedByCoord.out.bai"

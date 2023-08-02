@@ -1,0 +1,10 @@
+***Start_time: 2023. 06. 19. (월) 14:01:31 KST
+SampleID: 230512
+FASTQ_PATH_1: /data/project/OPLL/02.WES/01.QC/00.raw/Lamina/230512_Lamina_1.fastq.gz
+FASTQ_PATH_2: /data/project/OPLL/02.WES/01.QC/00.raw/Lamina/230512_Lamina_2.fastq.gz
+FASTP_PATH_1: /data/project/OPLL/02.WES/01.QC/01.fastp/Lamina/230512_Lamina.R1.fastq
+FASTP_PATH_2: /data/project/OPLL/02.WES/01.QC/01.fastp/Lamina/230512_Lamina.R2.fastq
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 19. (월) 15:05:41 KST

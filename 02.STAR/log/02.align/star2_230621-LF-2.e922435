@@ -1,0 +1,166 @@
+Using GATK jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx8G -Djava.io.tmpdir=/data/project/OPLL/temp/ -jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar AddOrReplaceReadGroups --INPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.Aligned.sortedByCoord.out.bam --OUTPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.RGadded.bam --SORT_ORDER coordinate --RGLB OPLL --RGPL Illumina --RGPU Illumina --RGSM 230621-LF-2 --CREATE_INDEX true --VALIDATION_STRINGENCY SILENT
+17:48:16.689 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Mon Jul 24 17:48:16 KST 2023] AddOrReplaceReadGroups --INPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.Aligned.sortedByCoord.out.bam --OUTPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.RGadded.bam --SORT_ORDER coordinate --RGLB OPLL --RGPL Illumina --RGPU Illumina --RGSM 230621-LF-2 --VALIDATION_STRINGENCY SILENT --CREATE_INDEX true --RGID 1 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Jul 24, 2023 5:48:16 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Mon Jul 24 17:48:16 KST 2023] Executing as goldpm1@compute03 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.8+10-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.3.0
+INFO	2023-07-24 17:48:16	AddOrReplaceReadGroups	Created read-group ID=1 PL=Illumina LB=OPLL SM=230621-LF-2
+
+INFO	2023-07-24 17:48:21	AddOrReplaceReadGroups	Processed     1,000,000 records.  Elapsed time: 00:00:04s.  Time for last 1,000,000:    4s.  Last read position: chr21:8,215,887
+INFO	2023-07-24 17:48:25	AddOrReplaceReadGroups	Processed     2,000,000 records.  Elapsed time: 00:00:08s.  Time for last 1,000,000:    3s.  Last read position: chr21:8,260,142
+INFO	2023-07-24 17:48:28	AddOrReplaceReadGroups	Processed     3,000,000 records.  Elapsed time: 00:00:11s.  Time for last 1,000,000:    3s.  Last read position: chr21:8,435,334
+INFO	2023-07-24 17:48:32	AddOrReplaceReadGroups	Processed     4,000,000 records.  Elapsed time: 00:00:15s.  Time for last 1,000,000:    3s.  Last read position: chr22_KI270733v1_random:127,285
+INFO	2023-07-24 17:48:35	AddOrReplaceReadGroups	Processed     5,000,000 records.  Elapsed time: 00:00:18s.  Time for last 1,000,000:    3s.  Last read position: chrUn_GL000220v1:114,792
+[Mon Jul 24 17:48:38 KST 2023] picard.sam.AddOrReplaceReadGroups done. Elapsed time: 0.37 minutes.
+Runtime.totalMemory()=2151677952
+Using GATK jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx8G -Djava.io.tmpdir=/data/project/OPLL/temp/ -jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar MarkDuplicates --INPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.RGadded.bam --OUTPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.RGadded.marked.bam --METRICS_FILE /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.RGadded.marked.metrics --CREATE_INDEX true --VALIDATION_STRINGENCY SILENT
+17:48:41.681 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Mon Jul 24 17:48:41 KST 2023] MarkDuplicates --INPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.RGadded.bam --OUTPUT /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.RGadded.marked.bam --METRICS_FILE /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.RGadded.marked.metrics --VALIDATION_STRINGENCY SILENT --CREATE_INDEX true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Jul 24, 2023 5:48:41 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Mon Jul 24 17:48:41 KST 2023] Executing as goldpm1@compute03 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.8+10-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.3.0
+INFO	2023-07-24 17:48:41	MarkDuplicates	Start of doWork freeMemory: 111771816; totalMemory: 140509184; maxMemory: 8589934592
+INFO	2023-07-24 17:48:41	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-07-24 17:48:41	MarkDuplicates	Will retain up to 31122951 data points before spilling to disk.
+INFO	2023-07-24 17:48:45	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:03s.  Time for last 1,000,000:    3s.  Last read position: chr21:8,215,887
+INFO	2023-07-24 17:48:45	MarkDuplicates	Tracking 55969 as yet unmatched pairs. 55969 records in RAM.
+INFO	2023-07-24 17:48:47	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:00:05s.  Time for last 1,000,000:    2s.  Last read position: chr21:8,260,142
+INFO	2023-07-24 17:48:47	MarkDuplicates	Tracking 28971 as yet unmatched pairs. 28971 records in RAM.
+INFO	2023-07-24 17:48:49	MarkDuplicates	Read     3,000,000 records.  Elapsed time: 00:00:07s.  Time for last 1,000,000:    2s.  Last read position: chr21:8,435,334
+INFO	2023-07-24 17:48:49	MarkDuplicates	Tracking 11299 as yet unmatched pairs. 11299 records in RAM.
+INFO	2023-07-24 17:48:51	MarkDuplicates	Read     4,000,000 records.  Elapsed time: 00:00:09s.  Time for last 1,000,000:    1s.  Last read position: chr22_KI270733v1_random:127,285
+INFO	2023-07-24 17:48:51	MarkDuplicates	Tracking 4007 as yet unmatched pairs. 4007 records in RAM.
+INFO	2023-07-24 17:48:53	MarkDuplicates	Read     5,000,000 records.  Elapsed time: 00:00:11s.  Time for last 1,000,000:    2s.  Last read position: chrUn_GL000220v1:114,792
+INFO	2023-07-24 17:48:53	MarkDuplicates	Tracking 41496 as yet unmatched pairs. 41496 records in RAM.
+INFO	2023-07-24 17:48:55	MarkDuplicates	Read 5703747 records. 0 pairs never matched.
+INFO	2023-07-24 17:48:55	MarkDuplicates	After buildSortedReadEndLists freeMemory: 1156653344; totalMemory: 1566572544; maxMemory: 8589934592
+INFO	2023-07-24 17:48:55	MarkDuplicates	Will retain up to 268435456 duplicate indices before spilling to disk.
+INFO	2023-07-24 17:48:55	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2023-07-24 17:48:56	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2023-07-24 17:48:57	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-07-24 17:48:57	MarkDuplicates	After generateDuplicateIndexes freeMemory: 1535359480; totalMemory: 3716153344; maxMemory: 8589934592
+INFO	2023-07-24 17:48:57	MarkDuplicates	Marking 211627 records as duplicates.
+INFO	2023-07-24 17:48:57	MarkDuplicates	Found 1 optical duplicate clusters.
+INFO	2023-07-24 17:48:57	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2023-07-24 17:49:21	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-07-24 17:49:21	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-07-24 17:49:21	MarkDuplicates	Getting Memory Stats.
+INFO	2023-07-24 17:49:21	MarkDuplicates	Before output close freeMemory: 122098776; totalMemory: 155189248; maxMemory: 8589934592
+INFO	2023-07-24 17:49:21	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-07-24 17:49:21	MarkDuplicates	After output close freeMemory: 93941024; totalMemory: 125829120; maxMemory: 8589934592
+[Mon Jul 24 17:49:21 KST 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.67 minutes.
+Runtime.totalMemory()=125829120
+Using GATK jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx8G -Djava.io.tmpdir=/data/project/OPLL/temp/ -jar /opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar SplitNCigarReads -R /data/resource/reference/human/UCSC/hg38/WholeGenomeFasta/genome.fa -I /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.RGadded.marked.bam -O /data/project/OPLL/01.bulkRNA/02.bam/230621/230621-LF-2.bam
+17:49:25.032 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/opt/Yonsei/GATK/4.2.3.0/gatk-package-4.2.3.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jul 24, 2023 5:49:25 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+17:49:25.233 INFO  SplitNCigarReads - ------------------------------------------------------------
+17:49:25.233 INFO  SplitNCigarReads - The Genome Analysis Toolkit (GATK) v4.2.3.0
+17:49:25.233 INFO  SplitNCigarReads - For support and documentation go to https://software.broadinstitute.org/gatk/
+17:49:25.234 INFO  SplitNCigarReads - Executing as goldpm1@compute03 on Linux v3.10.0-957.el7.x86_64 amd64
+17:49:25.234 INFO  SplitNCigarReads - Java runtime: OpenJDK 64-Bit Server VM v11.0.8+10-LTS
+17:49:25.234 INFO  SplitNCigarReads - Start Date/Time: July 24, 2023 at 5:49:24 PM KST
+17:49:25.234 INFO  SplitNCigarReads - ------------------------------------------------------------
+17:49:25.234 INFO  SplitNCigarReads - ------------------------------------------------------------
+17:49:25.235 INFO  SplitNCigarReads - HTSJDK Version: 2.24.1
+17:49:25.236 INFO  SplitNCigarReads - Picard Version: 2.25.4
+17:49:25.236 INFO  SplitNCigarReads - Built for Spark Version: 2.4.5
+17:49:25.236 INFO  SplitNCigarReads - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+17:49:25.236 INFO  SplitNCigarReads - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+17:49:25.236 INFO  SplitNCigarReads - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+17:49:25.236 INFO  SplitNCigarReads - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+17:49:25.236 INFO  SplitNCigarReads - Deflater: IntelDeflater
+17:49:25.236 INFO  SplitNCigarReads - Inflater: IntelInflater
+17:49:25.236 INFO  SplitNCigarReads - GCS max retries/reopens: 20
+17:49:25.236 INFO  SplitNCigarReads - Requester pays: disabled
+17:49:25.236 INFO  SplitNCigarReads - Initializing engine
+17:49:25.469 INFO  SplitNCigarReads - Done initializing engine
+17:49:25.521 INFO  ProgressMeter - Starting traversal
+17:49:25.524 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+17:49:36.291 INFO  ProgressMeter -        chr1:27154659              0.2                 10000          55746.5
+17:49:46.688 INFO  ProgressMeter -       chr1:109601475              0.4                 17000          48197.3
+17:49:56.832 INFO  ProgressMeter -       chr1:179126529              0.5                 29000          55580.4
+17:50:07.534 INFO  ProgressMeter -        chr2:38076036              0.7                 43000          61413.9
+17:50:18.748 INFO  ProgressMeter -       chr2:186630888              0.9                 53000          59749.7
+17:50:28.911 INFO  ProgressMeter -        chr3:19985048              1.1                 63000          59635.6
+17:50:39.136 INFO  ProgressMeter -       chr3:124326136              1.2                 70000          57056.7
+17:50:49.231 INFO  ProgressMeter -        chr4:40890389              1.4                 78000          55912.6
+17:50:59.285 INFO  ProgressMeter -        chr5:74685396              1.6                 86000          55034.1
+17:51:09.888 INFO  ProgressMeter -        chr6:11578726              1.7                 98000          56341.8
+17:51:20.549 INFO  ProgressMeter -        chr6:75255168              1.9                119000          62074.0
+17:51:31.330 INFO  ProgressMeter -        chr7:56832800              2.1                131000          62478.1
+17:51:42.176 INFO  ProgressMeter -       chr7:155099388              2.3                141000          61910.0
+17:51:52.214 INFO  ProgressMeter -       chr8:143441021              2.4                150000          61354.3
+17:52:02.875 INFO  ProgressMeter -       chr9:121312365              2.6                164000          62536.5
+17:52:13.047 INFO  ProgressMeter -       chr10:17229292              2.8                173000          61962.0
+17:52:24.115 INFO  ProgressMeter -         chr11:265194              3.0                185000          62153.9
+17:52:34.535 INFO  ProgressMeter -       chr11:62708327              3.2                201000          63806.5
+17:52:45.814 INFO  ProgressMeter -      chr11:111911610              3.3                211000          63209.0
+17:52:55.831 INFO  ProgressMeter -       chr12:49185592              3.5                221000          63051.3
+17:53:07.096 INFO  ProgressMeter -      chr12:112684347              3.7                233000          63094.9
+17:53:17.127 INFO  ProgressMeter -        chr16:2761688              3.9                274000          70983.8
+17:53:27.194 INFO  ProgressMeter -        chr21:8214606              4.0                730000         181238.9
+17:53:37.204 INFO  ProgressMeter -        chr21:8216506              4.2               1143000         272490.0
+17:53:47.233 INFO  ProgressMeter -        chr21:8252317              4.4               1462000         335184.0
+17:53:57.410 INFO  ProgressMeter -        chr21:8258796              4.5               1660000         366330.0
+17:54:07.410 INFO  ProgressMeter -        chr21:8259919              4.7               1880000         400161.8
+17:54:17.424 INFO  ProgressMeter -        chr21:8392716              4.9               2251000         462697.5
+17:54:27.427 INFO  ProgressMeter -        chr21:8399417              5.0               2758000         548124.9
+17:54:37.433 INFO  ProgressMeter -        chr21:8440386              5.2               3226000         620565.6
+17:54:47.617 INFO  ProgressMeter -        chr21:8987125              5.4               3815000         710666.5
+17:54:57.620 INFO  ProgressMeter - chr22_KI270733v1_random:176699              5.5               4630000         836510.1
+17:55:07.631 INFO  ProgressMeter - chrUn_GL000220v1:115880              5.7               5169000         906561.1
+17:55:17.675 INFO  ProgressMeter - chrUn_GL000220v1:122612              5.9               5293000         901836.7
+17:55:27.776 INFO  ProgressMeter - chrUn_GL000220v1:155713              6.0               5404000         895070.0
+17:55:37.812 INFO  ProgressMeter - chrUn_GL000220v1:159030              6.2               5542000         893179.5
+17:55:43.583 WARN  IntelInflater - Zero Bytes Written : 0
+17:55:43.590 INFO  SplitNCigarReads - 0 read(s) filtered by: AllowAllReadsReadFilter 
+
+17:55:43.591 INFO  OverhangFixingManager - Overhang Fixing Manager saved 32038 reads in the first pass
+17:55:43.594 INFO  SplitNCigarReads - Starting traversal pass 2
+17:55:47.889 INFO  ProgressMeter -       chr3:112798724              6.4               5773000         905890.7
+17:55:57.913 INFO  ProgressMeter -       chr14:92858305              6.5               5954000         910427.7
+17:56:08.288 INFO  ProgressMeter -        chr21:8210947              6.7               6233000         928533.8
+17:56:18.717 INFO  ProgressMeter -        chr21:8215391              6.9               6517000         946339.7
+17:56:31.031 INFO  ProgressMeter -        chr21:8215934              7.1               6739000         950256.9
+17:56:41.077 INFO  ProgressMeter -        chr21:8217224              7.3               6960000         958783.3
+17:56:51.155 INFO  ProgressMeter -        chr21:8218669              7.4               7114000         957839.3
+17:57:01.160 INFO  ProgressMeter -        chr21:8255099              7.6               7243000         953789.8
+17:57:11.303 INFO  ProgressMeter -        chr21:8258791              7.8               7356000         947573.8
+17:57:21.442 INFO  ProgressMeter -        chr21:8258819              7.9               7428000         936463.8
+17:57:31.448 INFO  ProgressMeter -        chr21:8260062              8.1               7623000         941260.2
+17:57:41.463 INFO  ProgressMeter -        chr21:8260426              8.3               7767000         939672.0
+17:57:51.524 INFO  ProgressMeter -        chr21:8392720              8.4               7955000         943282.5
+17:58:01.528 INFO  ProgressMeter -        chr21:8398135              8.6               8154000         948132.2
+17:58:11.535 INFO  ProgressMeter -        chr21:8398892              8.8               8328000         949942.1
+17:58:21.559 INFO  ProgressMeter -        chr21:8400543              8.9               8559000         958034.5
+17:58:31.845 INFO  ProgressMeter -        chr21:8435949              9.1               8769000         963060.2
+17:58:42.721 INFO  ProgressMeter -        chr21:8442356              9.3               9069000         976568.4
+17:58:53.528 INFO  ProgressMeter -        chr21:8443606              9.5               9369000         989676.1
+17:59:03.707 INFO  ProgressMeter -       chr21:46112711              9.6               9599000         996122.3
+17:59:14.367 INFO  ProgressMeter -       chr22:41357258              9.8               9609000         979108.1
+17:59:24.618 INFO  ProgressMeter -       chrX:124062922             10.0               9618000         963256.1
+17:59:34.621 INFO  ProgressMeter - chr22_KI270733v1_random:132818             10.2               9987000         983785.8
+17:59:46.244 INFO  ProgressMeter - chr22_KI270733v1_random:172993             10.3              10226000         988465.0
+17:59:57.488 INFO  ProgressMeter - chrUn_GL000220v1:75645             10.5              10545000        1001164.6
+18:00:07.783 INFO  ProgressMeter - chrUn_GL000220v1:115298             10.7              10762000        1005388.8
+18:00:17.828 INFO  ProgressMeter - chrUn_GL000220v1:116151             10.9              10913000        1003797.3
+18:00:27.833 INFO  ProgressMeter - chrUn_GL000220v1:117903             11.0              10977000         994436.1
+18:00:37.836 INFO  ProgressMeter - chrUn_GL000220v1:152059             11.2              11047000         985883.0
+18:00:47.860 INFO  ProgressMeter - chrUn_GL000220v1:157446             11.4              11128000         978525.1
+18:00:59.145 INFO  ProgressMeter - chrUn_GL000220v1:158742             11.6              11210000         969695.2
+18:01:09.658 INFO  ProgressMeter - chrUn_GL000220v1:159816             11.7              11359000         967912.4
+18:01:12.841 WARN  IntelInflater - Zero Bytes Written : 0
+18:01:12.842 INFO  SplitNCigarReads - 0 read(s) filtered by: AllowAllReadsReadFilter 
+
+18:01:12.842 INFO  ProgressMeter - chrUn_GL000220v1:161472             11.8              11407494         967668.9
+18:01:12.842 INFO  ProgressMeter - Traversal complete. Processed 11407494 total reads in 11.8 minutes.
+18:01:23.349 INFO  SplitNCigarReads - Shutting down engine
+[July 24, 2023 at 6:01:23 PM KST] org.broadinstitute.hellbender.tools.walkers.rnaseq.SplitNCigarReads done. Elapsed time: 11.97 minutes.
+Runtime.totalMemory()=1277165568

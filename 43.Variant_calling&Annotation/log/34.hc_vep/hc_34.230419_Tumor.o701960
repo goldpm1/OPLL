@@ -1,0 +1,10 @@
+***Start_time: 2023. 06. 16. (금) 22:42:26 KST
+/data/project/Meningioma/06.hc/03.HF/230419/Tumor/230419_Tumor.DP100.vcf
+/home/goldpm1/reference/genome.fa
+/data/project/Meningioma/06.hc/04.vep/230419/Tumor/230419_Tumor.DP100.vep.vcf
+bgzip start
+bgzip end
+--------
+Job_exited_code: 0 (Success)
+--------
+***End_time: 2023. 06. 16. (금) 23:28:00 KST
